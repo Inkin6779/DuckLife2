@@ -1,29 +1,6 @@
 <html>
   <head>
-    <title>Game Name</title>
-    <style>
-        body {
-            margin: 0;
-            overflow: hidden; /* Prevents scrolling */
-            background-color: black;
-        }
-        .container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-        }
-        .scaled-box {
-            height: 100%;
-            max-width: 100%;
-            aspect-ratio: 640 / 480;
-        }
-        /* Forces the Ruffle embed to fill the scaled box completely */
-        .scaled-box embed {
-            width: 100%;
-            height: 100%;
-        }
-    </style>
+    <title>Duck Life 2</title>
     <script>
         window.onbeforeunload = function() {
             return "Are you sure you want to reload?";
@@ -31,10 +8,8 @@
     </script>
   </head>
   <body>
-    <div class="container">
-        <div class="scaled-box">
-            <embed src="insert.swf">
-        </div>
+    <div style="text-align: center;">
+    <embed src="insert.swf" width="100%" height="100%">
     </div>
     <script src="https://unpkg.com/@ruffle-rs/ruffle"></script>
   </body>
