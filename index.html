@@ -6,6 +6,15 @@
             margin: 0;
             overflow: hidden;
             background-color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .game-container {
+            aspect-ratio: 4 / 3;
+            height: 100vh;
+            max-width: 100vw;
         }
     </style>
     <script>
@@ -22,7 +31,9 @@
     </script>
   </head>
   <body>
+    <div class="game-container">
     <embed src="insert.swf" width="100%" height="100%">
+    </div>
     <script src="https://unpkg.com/@ruffle-rs/ruffle"></script>
   </body>
 </html>
